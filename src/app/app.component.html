@@ -1,0 +1,93 @@
+<div class="main-container">
+  <header class="header-2">
+    <div class="branding">
+      <a class="nav-link">
+        <cds-icon shape="home" size="lg"></cds-icon>
+        <span class="title">Clarity</span>
+      </a>
+    </div>
+    <div class="header-nav">
+      <a class="active nav-link nav-text">Home</a>
+    </div>
+  </header>
+  <div class="content-container">
+    <div class="content-area">
+      <h1>Vertical Navigation</h1>
+      <clr-vertical-nav [clrVerticalNavCollapsible]="demoCollapsible">
+        <clr-vertical-nav-group
+          routerLinkActive="active"
+          [clrVerticalNavGroupLabel]="'Toggle normal vertical nav group'"
+        >
+          <cds-icon shape="user" clrVerticalNavIcon></cds-icon>
+          Normal
+          <clr-vertical-nav-group-children>
+            <a
+              clrVerticalNavLink
+              routerLink="./normal/pidgey"
+              routerLinkActive="active"
+            >
+              Pidgey
+            </a>
+            <a
+              clrVerticalNavLink
+              routerLink="./normal/snorlax"
+              routerLinkActive="active"
+            >
+              Snorlax
+            </a>
+          </clr-vertical-nav-group-children>
+        </clr-vertical-nav-group>
+        <clr-vertical-nav-group
+          routerLinkActive="active"
+          [clrVerticalNavGroupLabel]="'Toggle fire vertical nav group'"
+        >
+          <cds-icon shape="flame" clrVerticalNavIcon></cds-icon>
+          Fire
+          <clr-vertical-nav-group-children>
+            <a
+              clrVerticalNavLink
+              routerLink="./fire/charmander"
+              routerLinkActive="active"
+            >
+              Charmander
+            </a>
+            <a
+              clrVerticalNavLink
+              routerLink="./fire/charizard"
+              routerLinkActive="active"
+            >
+              Charizard
+            </a>
+          </clr-vertical-nav-group-children>
+        </clr-vertical-nav-group>
+        <clr-vertical-nav-group
+          routerLinkActive="active"
+          [clrVerticalNavGroupLabel]="'Toggle electric vertical nav group'"
+        >
+          <cds-icon shape="bolt" clrVerticalNavIcon></cds-icon>
+          Electric
+          <clr-vertical-nav-group-children>
+            <a
+              clrVerticalNavLink
+              routerLink="./electric/pikachu"
+              routerLinkActive="active"
+            >
+              Pikachu
+            </a>
+            <a
+              clrVerticalNavLink
+              routerLink="./electric/raichu"
+              routerLinkActive="active"
+            >
+              Raichu
+            </a>
+          </clr-vertical-nav-group-children>
+        </clr-vertical-nav-group>
+        <a clrVerticalNavLink routerLinkActive="active" routerLink="./credit">
+          <cds-icon shape="certificate" clrVerticalNavIcon></cds-icon>
+          Credit
+        </a>
+      </clr-vertical-nav>
+    </div>
+  </div>
+</div>
